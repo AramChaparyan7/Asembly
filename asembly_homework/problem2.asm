@@ -15,7 +15,7 @@ main:
     mov rdi,scanfrm 
     lea rsi,num
     call scanf
-    mov rcx,qword[num]
+    movsx rcx,dword[num]
     mov rbx,0
     mov rax,0
 Loop:
